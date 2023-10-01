@@ -11,7 +11,7 @@ const tab = ref("one");
   <v-card class="pa-md-4 mx-auto card_container">
     <v-tabs v-model="tab" bg-color="dark">
       <v-tab value="one">KomCam Detector</v-tab>
-      <v-tab value="two">KomCam LandMark</v-tab>
+      <v-tab style="pointer-events: none;" value="two">KomCam LandMark</v-tab>
       <v-tab value="three">KomCam List</v-tab>
     </v-tabs>
 
@@ -21,7 +21,7 @@ const tab = ref("one");
           <CamDetection @change-tab-three="tab = 'three'"/>
         </v-window-item>
 
-        <v-window-item disabled value="two">
+        <v-window-item  value="two">
           <FaceLandmark  />
         </v-window-item>
 

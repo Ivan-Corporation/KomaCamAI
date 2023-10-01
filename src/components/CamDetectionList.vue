@@ -66,6 +66,7 @@ const items = ref([
   { text: "Scissors", icon: "mdi-content-cut" },
   { text: "Teddy bear", icon: "mdi-teddy-bear" },
   { text: "Toothbrush", icon: "mdi-toothbrush" },
+  { text: "Secret items", icon: "mdi-head-question" },
 ]);
 </script>
 <style></style>

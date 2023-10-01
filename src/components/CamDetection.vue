@@ -4,7 +4,7 @@
       <div>
         <h1>KomCam Objects Detector <v-icon icon="mdi-camera-control" size="sm"/></h1>
         <p>Bring objects from the <a style="cursor: pointer;" @click="$emit('change-tab-three')">list</a> to your camera (Need permission)</p>
-        <div v-if="!showBtn" style="margin-top: 35%;">
+        <div v-if="!showBtn" style="margin-top: 35%; margin-bottom: 35%;">
           <v-progress-circular color="blue-lighten-3" indeterminate :size="52"></v-progress-circular>
           
         </div>

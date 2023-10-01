@@ -21,7 +21,7 @@ const tab = ref("one");
           <CamDetection @change-tab-three="tab = 'three'"/>
         </v-window-item>
 
-        <v-window-item value="two">
+        <v-window-item disabled value="two">
           <FaceLandmark  />
         </v-window-item>
 
@@ -36,7 +36,7 @@ const tab = ref("one");
 <style scoped>
 .card_container {
   width: 850px;
-  height: 850px;
+  height: 100%;
 
 }
 @media (max-width: 950px) {

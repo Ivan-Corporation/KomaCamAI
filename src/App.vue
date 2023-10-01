@@ -1,6 +1,7 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
+import FaceLandmark from "./components/FaceLandmark.vue";
 import CamDetection from "./components/CamDetection.vue";
+import CamDetectionList from "./components/CamDetectionList.vue";
 import { ref } from "vue";
 
 const tab = ref("one");
@@ -10,8 +11,8 @@ const tab = ref("one");
   <v-card class="pa-md-4 mx-auto card_container">
     <v-tabs v-model="tab" bg-color="dark">
       <v-tab value="one">KomCam Detector</v-tab>
-      <v-tab value="two">Item Two</v-tab>
-      <v-tab value="three">Item Three</v-tab>
+      <v-tab value="two">KomCam LandMark</v-tab>
+      <v-tab value="three">KomCam List</v-tab>
     </v-tabs>
 
     <v-card-text>
@@ -21,10 +22,12 @@ const tab = ref("one");
         </v-window-item>
 
         <v-window-item value="two">
-          <HelloWorld msg="Vite + Vue" />
+          <FaceLandmark  />
         </v-window-item>
 
-        <v-window-item value="three"> Three </v-window-item>
+        <v-window-item value="three"> 
+          <CamDetectionList/>
+        </v-window-item>
       </v-window>
     </v-card-text>
   </v-card>
